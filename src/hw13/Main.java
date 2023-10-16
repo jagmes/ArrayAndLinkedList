@@ -19,8 +19,8 @@ public class Main  {
         System.out.println(removeElements(arrList));
         System.out.println("LinkedList");
         System.out.println(countElemments(linlList));
-       //  System.out.println("Удаление из linkedList:");
-       // System.out.println(removeElements(linlList));
+        System.out.println("Удаление из linkedList:");
+        System.out.println(removeElements(linlList));
         System.out.println("TreeSet List");
         System.out.println(CountHashElemments(tList));
         System.out.println("Удаление из TreeSet: ");
@@ -45,7 +45,7 @@ public class Main  {
         long res = 0;
         long startTime = System.currentTimeMillis();
         Object object = new Object();
-        for (int i = 50000; i >0 ; i--) {
+        for (int i = 50; i >0 ; i--) {
             list.remove(object);
         }
         res = System.currentTimeMillis()- startTime;
