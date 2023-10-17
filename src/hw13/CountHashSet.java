@@ -14,9 +14,8 @@ public class CountHashSet {
     }
     public static long CountHSElement(HashSet<Object> hlist) {
 
-        long result = 0;
+        long result;
         long startTime = System.currentTimeMillis();
-        Object object = new Object();
         for (int i = 0; i < 500000; i++) {
             hlist.add("Anya");
         }
@@ -24,9 +23,8 @@ public class CountHashSet {
         return result;
     }
     public static long removeHSElement(HashSet<Object> hlist){
-        long result = 0;
+        long result;
         long startTime = System.currentTimeMillis();
-        Object object = new Object();
         for (int i = 50000; i >0; i--) {
             hlist.remove("Anya");
         }
