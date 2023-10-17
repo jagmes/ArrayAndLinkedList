@@ -12,9 +12,8 @@ public class CountTreeSet implements Comparable<CountTreeSet> {
     }
 
     public static long CountHashElemments(TreeSet<Object> tlist){
-        long result = 0;
+        long result;
         long startTime = System.currentTimeMillis();
-        Object object = new Object();
         for (int i = 0; i < 500000; i++) {
             tlist.add("Masha");
         }
@@ -23,9 +22,8 @@ public class CountTreeSet implements Comparable<CountTreeSet> {
     }
 
     public static long removeTreeSetElem(TreeSet<Object> tlist){
-        long result = 0;
+        long result;
         long startTime = System.currentTimeMillis();
-        Object object = new Object();
         for (int i = 50000; i > 0; i--) {
             tlist.remove("Masha");
         }
