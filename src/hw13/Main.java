@@ -32,7 +32,7 @@ public class Main  {
     }
 
     public static long countElemments(List list) {
-        long result = 0;
+        long result;
         long sTartTime = System.currentTimeMillis();
         Object object = new Object();
         for (int i = 0; i < 500000; i++) {
@@ -42,7 +42,7 @@ public class Main  {
         return result;
     }
     public static long removeElements(List list){
-        long res = 0;
+        long res;
         long startTime = System.currentTimeMillis();
         Object object = new Object();
         for (int i = 50; i >0 ; i--) {
