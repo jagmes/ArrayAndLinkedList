@@ -13,11 +13,11 @@ public class Main {
         for (int i = 0; i <10000 ; i++) {
             String uid =generateUid();
 
-            namesOfEmployees.put(uid,  new String());
+            namesOfEmployees.put(uid, "");
             System.out.println( namesOfEmployees.keySet());
         }
 
-       namesOfEmployees.put(generateUid(),  new String());
+       //namesOfEmployees.put(generateUid(), "");
         System.out.println( namesOfEmployees.size());
     }
 
@@ -28,7 +28,7 @@ public class Main {
         Random random = new Random();
    while (true) {
        String generated = random.ints(startLimit, endLimit + 1).limit(tLenght).collect(StringBuilder::new, StringBuilder::appendCodePoint, StringBuilder::append).toString();
-       if (generated.equals(26) )
+       if (generated.equals("26") )
        tLenght++;
         else {
            return generated;
