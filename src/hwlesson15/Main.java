@@ -9,10 +9,10 @@ public class Main {
     public static void main(String[] args) {
 
         Map<String, String>  namesOfEmployees  = new HashMap<>();
-
+        if (namesOfEmployees.size()<1000){
         for (int i = 0; i <1000 ; i++) {
-          //  String uid =generateUid(10);
-            if (namesOfEmployees.size()<1000){
+
+
             namesOfEmployees.put(generateUid(3), "");
             System.out.println( namesOfEmployees.keySet());}
         }
